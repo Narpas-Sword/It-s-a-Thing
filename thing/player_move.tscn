@@ -51,8 +51,8 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 1/z_index = 0
 
 [sub_resource type="CapsuleShape2D" id=4]
-radius = 13.3938
-height = 47.0251
+radius = 16.0
+height = 32.0
 
 [node name="Node2D" type="Node2D"]
 
@@ -70,8 +70,8 @@ position = Vector2( 375, 300 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="player"]
-position = Vector2( 15, 0 )
-scale = Vector2( 3.79255, 4.30028 )
+position = Vector2( 16, 0 )
+scale = Vector2( 4, 4 )
 texture = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]

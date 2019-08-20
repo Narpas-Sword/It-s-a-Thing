@@ -22,5 +22,13 @@ func _physics_process(delta):
 	move_direction.x = -Input.get_action_strength('left') + Input.get_action_strength('right')
 	move_direction.y = +Input.get_action_strength('down') - Input.get_action_strength('up')
 	
+	# Sprite flipping; change this once we get a better sprite
+	if move_direction.x > 0:
+		$Sprite.scale.x = 4
+		$Sprite.position.x = 16
+	elif move_direction.x<0:
+		$Sprite.scale.x = -4
+		$Sprite.position.x = -16
+	
 	velocity = velocity.linear_interpolate(move_direction.normalized() * speed * delta, 1 - inertia)
 	velocity = move_and_slide(velocity)
