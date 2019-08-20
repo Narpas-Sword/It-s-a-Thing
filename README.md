@@ -12,9 +12,8 @@ Programming goals:
     
     b. talking 
     
-    i) text boxes
-    
-    ii) event on button press
+      i) text boxes
+     ii) event on button press
     
     
   2. Menus.
