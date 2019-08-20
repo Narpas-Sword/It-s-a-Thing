@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Florian_Decros_-_07_-_Kugelblitz.wav-cb61b96bcf31cdde67552148d9fb8a01.sample"
+
+[deps]
+
+source_file="res://music/Florian_Decros_-_07_-_Kugelblitz.wav"
+dest_files=[ "res://.import/Florian_Decros_-_07_-_Kugelblitz.wav-cb61b96bcf31cdde67552148d9fb8a01.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

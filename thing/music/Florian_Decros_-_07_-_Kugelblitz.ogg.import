@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Florian_Decros_-_07_-_Kugelblitz.ogg-d277bd6cd05dc02e12eeed04074f86a7.oggstr"
+
+[deps]
+
+source_file="res://music/Florian_Decros_-_07_-_Kugelblitz.ogg"
+dest_files=[ "res://.import/Florian_Decros_-_07_-_Kugelblitz.ogg-d277bd6cd05dc02e12eeed04074f86a7.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

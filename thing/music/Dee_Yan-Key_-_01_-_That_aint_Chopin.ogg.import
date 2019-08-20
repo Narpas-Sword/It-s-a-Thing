@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Dee_Yan-Key_-_01_-_That_aint_Chopin.ogg-c7efa6e7f41dbfd062c3449ff0cb247f.oggstr"
+
+[deps]
+
+source_file="res://music/Dee_Yan-Key_-_01_-_That_aint_Chopin.ogg"
+dest_files=[ "res://.import/Dee_Yan-Key_-_01_-_That_aint_Chopin.ogg-c7efa6e7f41dbfd062c3449ff0cb247f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

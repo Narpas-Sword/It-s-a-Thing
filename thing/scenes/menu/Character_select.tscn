@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/menu/Menu_Theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/menu/Character_buttons.gd" type="Script" id=2]
+
+[node name="Character_select" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="buttons" type="VBoxContainer" parent="."]
+margin_left = 163.506
+margin_top = 27.1986
+margin_right = 847.506
+margin_bottom = 552.199
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Character 1" type="MenuButton" parent="buttons"]
+margin_right = 684.0
+margin_bottom = 128.0
+size_flags_vertical = 3
+text = "character 1"
+
+[node name="Character 2" type="MenuButton" parent="buttons"]
+margin_top = 132.0
+margin_right = 684.0
+margin_bottom = 260.0
+size_flags_vertical = 3
+text = "character 2"
+
+[node name="Character 3" type="MenuButton" parent="buttons"]
+margin_top = 264.0
+margin_right = 684.0
+margin_bottom = 392.0
+size_flags_vertical = 3
+text = "character 3"
+
+[node name="back" type="MenuButton" parent="buttons"]
+margin_top = 396.0
+margin_right = 684.0
+margin_bottom = 525.0
+size_flags_vertical = 3
+text = "back"
+[connection signal="pressed" from="buttons/Character 1" to="buttons" method="_on_Character_1_pressed"]
+[connection signal="pressed" from="buttons/Character 2" to="buttons" method="_on_Character_2_pressed"]
+[connection signal="pressed" from="buttons/Character 3" to="buttons" method="_on_Character_3_pressed"]
+[connection signal="pressed" from="buttons/back" to="buttons" method="_on_back_pressed"]

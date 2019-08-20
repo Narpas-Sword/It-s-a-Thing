@@ -1,0 +1,127 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/menu/Menu_Theme.tres" type="Theme" id=1]
+[ext_resource path="res://scripts/menu/Options_Menu.gd" type="Script" id=2]
+
+[node name="main menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="Video" type="Button" parent="."]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 131.0
+margin_bottom = 132.0
+text = "Video"
+
+[node name="Audio" type="Button" parent="."]
+margin_left = 300.0
+margin_top = 100.0
+margin_right = 386.0
+margin_bottom = 132.0
+text = "Audio"
+
+[node name="input" type="Button" parent="."]
+margin_left = 550.0
+margin_top = 100.0
+margin_right = 632.0
+margin_bottom = 132.0
+text = "Input"
+
+[node name="Back" type="Button" parent="."]
+margin_left = 900.0
+margin_top = 100.0
+margin_right = 973.0
+margin_bottom = 132.0
+text = "Back"
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_top = 8.0
+text = "Options Menu"
+
+[node name="ctrl_video" type="Control" parent="."]
+editor/display_folded = true
+visible = false
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_resolution" type="OptionButton" parent="ctrl_video"]
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 200.0
+margin_bottom = 82.0
+
+[node name="btn_fullscreen" type="OptionButton" parent="ctrl_video"]
+margin_left = 50.0
+margin_top = 100.0
+margin_right = 200.0
+margin_bottom = 132.0
+
+[node name="ctrl_audio" type="Control" parent="."]
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="btn_master_mute" type="Button" parent="ctrl_audio"]
+margin_left = 35.0
+margin_top = 50.0
+margin_right = 209.0
+margin_bottom = 82.0
+text = "Mute Master"
+
+[node name="btn_music_mute" type="Button" parent="ctrl_audio"]
+margin_left = 35.0
+margin_top = 100.0
+margin_right = 191.0
+margin_bottom = 132.0
+text = "Mute Music"
+
+[node name="btn_effects_mute" type="Button" parent="ctrl_audio"]
+margin_left = 35.0
+margin_top = 150.0
+margin_right = 214.0
+margin_bottom = 182.0
+text = "Mute Effects"
+
+[node name="master_slider" type="HSlider" parent="ctrl_audio"]
+margin_left = 221.228
+margin_top = 50.0
+margin_right = 371.228
+margin_bottom = 70.0
+min_value = -60.0
+max_value = 1.0
+value = 1.0
+ticks_on_borders = false
+
+[node name="music_slider" type="HSlider" parent="ctrl_audio"]
+margin_left = 220.0
+margin_top = 100.0
+margin_right = 370.0
+margin_bottom = 120.0
+min_value = -60.0
+max_value = 1.0
+value = 1.0
+ticks_on_borders = false
+
+[node name="effects_slider" type="HSlider" parent="ctrl_audio"]
+margin_left = 220.0
+margin_top = 150.0
+margin_right = 370.0
+margin_bottom = 170.0
+min_value = -60.0
+max_value = 1.0
+value = 1.0
+ticks_on_borders = false
+
+[node name="ctrl_input" type="Control" parent="."]
+visible = false
+anchor_top = 0.25
+anchor_right = 1.0
+anchor_bottom = 1.0
+[connection signal="pressed" from="Back" to="." method="_on_Back_pressed"]
