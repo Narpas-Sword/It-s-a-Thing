@@ -51,8 +51,8 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 1/z_index = 0
 
 [sub_resource type="CapsuleShape2D" id=4]
-radius = 19.0187
-height = 26.5309
+radius = 16.0
+height = 32.0
 
 [node name="Node2D" type="Node2D"]
 
@@ -66,21 +66,22 @@ __meta__ = {
 }
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( 143.841, 280.833 )
+position = Vector2( 375, 300 )
 script = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="player"]
-position = Vector2( 130.107, 26.9735 )
-scale = Vector2( 3.79255, 4.30028 )
+position = Vector2( 16, 0 )
+scale = Vector2( 4, 4 )
 texture = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
-position = Vector2( 124.552, 42.4006 )
 current = true
-smoothing_enabled = true
+drag_margin_h_enabled = false
+drag_margin_v_enabled = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-position = Vector2( 117.334, 36.4935 )
+position = Vector2( 0, 4 )
 shape = SubResource( 4 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+
