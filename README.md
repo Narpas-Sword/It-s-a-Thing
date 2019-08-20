@@ -42,6 +42,10 @@ Current goals:
   2. Menus.
     
     a) figure out menus
+      -art for main menu
+      -talk about font choice?
+      -nesting menus inside of other menus
+      
     
     b) add more steps
   
