@@ -1,5 +1,6 @@
 extends KinematicBody2D
 
+# Number of ticks per second. Should be 60 unless you changed something in the project
 const TICKRATE: int = 60
 
 # The player's movement speed in units per second. Set this instead of speed
