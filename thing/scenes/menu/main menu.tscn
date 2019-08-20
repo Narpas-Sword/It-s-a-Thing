@@ -34,6 +34,7 @@ margin_right = 684.0
 margin_bottom = 525.0
 size_flags_vertical = 3
 text = "Exit"
+
 [connection signal="pressed" from="Menu_Buttons/Play" to="Menu_Buttons" method="_on_Play_pressed"]
 [connection signal="pressed" from="Menu_Buttons/Options" to="Menu_Buttons" method="_on_Options_pressed"]
 [connection signal="pressed" from="Menu_Buttons/Exit" to="Menu_Buttons" method="_on_Exit_pressed"]

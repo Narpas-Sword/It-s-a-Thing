@@ -2,6 +2,7 @@ extends Control
 
 #temp
 const SAVE_PATH = "res://save.json"
+const TICKRATE = 60
 var settings = {}
 var play_music = 1
 var play_effects = 1
