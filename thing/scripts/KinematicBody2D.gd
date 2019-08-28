@@ -2,7 +2,7 @@ extends KinematicBody2D
 
 # The player's movement speed in units per second. Set this instead of speed
 export var movespeed: float = 200
-var speed: float = movespeed*options.TICKRATE # Multiplies the speed per second by the tickrate
+var speed: float = movespeed * options.TICKRATE # Multiplies the speed per second by the tickrate
 
 
 # Value between 0 and 1. Newton's first law; determines how fast the player's velocity changes. 0 means instantly, 1 means never
