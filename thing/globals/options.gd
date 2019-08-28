@@ -100,3 +100,6 @@ func _save_game():
 
 func _load_game():
 	pass
+
+func _choose_music():
+	pass
