@@ -12,6 +12,9 @@ export(float, 1) var inertia: float = 0.75
 var velocity: Vector2 = Vector2(0, 0)
 var move_direction: Vector2 = Vector2(0,0)
 
+func get_self():
+	return self.get_self()
+
 func _ready():
 	pass
 
