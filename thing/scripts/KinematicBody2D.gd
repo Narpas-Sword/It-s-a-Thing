@@ -6,7 +6,7 @@ var speed: float = movespeed*options.TICKRATE # Multiplies the speed per second 
 
 
 # Value between 0 and 1. Newton's first law; determines how fast the player's velocity changes. 0 means instantly, 1 means never
-export var inertia: float = 0.75
+export(float, 1) var inertia: float = 0.75
 
 # Vectors for us to do math on
 var velocity: Vector2 = Vector2(0, 0)
